@@ -1,0 +1,19 @@
+service: sample
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  role: arn:aws:iam::103089546932:role/lambda_basic_execution
+  environment:
+   
+
+functions:
+  landingPage:
+    handler: index/main.landingPage
+    events:
+      - http:
+          path: index
+          method: get
+          cors: true 

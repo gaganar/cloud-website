@@ -1,0 +1,11 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "cloud website",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "serverless": "^1.26.1",
+    "serverless-offline": "^3.20.3"
+  }
+}
